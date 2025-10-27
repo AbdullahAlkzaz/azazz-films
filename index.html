@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azazz Films - Storytelling Through Cinematic Frames</title>
+    <!-- Google Fonts للخط السينمائي -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cinzel', serif; /* خط سينمائي كلاسيكي */
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #1e3c72, #2a5298); /* خلفية gradient حديثة */
+            color: #fff;
+            min-height: 100vh;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* خلفية شفافة للعنوان */
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        .header h1 {
+            font-size: 3em;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin: 0;
+        }
+        .header p {
+            font-size: 1.3em;
+            font-weight: 400;
+            margin: 10px 0;
+        }
+        .cv-link {
+            margin-top: 20px;
+        }
+        .cv-link a {
+            padding: 12px 25px;
+            background: linear-gradient(45deg, #ff6b6b, #feca57); /* زر gradient */
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .cv-link a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .works-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        .work-card {
+            background: rgba(255, 255, 255, 0.1); /* خلفية شفافة للبطاقات */
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            backdrop-filter: blur(10px); /* تأثير blur حديث */
+        }
+        .work-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+        .thumb {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
+        .thumb:hover {
+            opacity: 0.8;
+        }
+        .meta {
+            padding: 20px;
+            text-align: center;
+        }
+        .meta h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .role {
+            font-size: 1em;
+            color: #ddd;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+        .watch-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #4ecdc4, #44a08d); /* زر gradient */
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .watch-btn:hover {
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #44a08d, #4ecdc4);
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Azazz Films</h1>
+        <p>Storytelling Through Cinematic Frames</p>
+        <div class="cv-link">
+            <a href="#" target="_blank">Download My CV</a>
+        </div>
+    </div>
+
+    <div class="works-grid">
+        <!-- Reel ترويجي لمركز تعليمي -->
+        <div class="work-card">
+            <!-- Thumbnail: استبدل src بصورة مصغرة مستخرجة من الفيديو (مثل images/thumbnail1.jpg) -->
+            <img class="thumb" src="https://via.placeholder.com/800x450.png?text=Video" alt="Reel ترويجي لمركز تعليمي">
+            <div class="meta">
+                <h3>Reel ترويجي لمركز تعليمي</h3>
+                <div class="role">Script · Cinematography · Lighting · Editing</div>
+                <a class="watch-btn" href="https://www.facebook.com/share/v/15xcRRTgnm/" target="_blank">Watch</a>
+            </div>
+        </div>
+
+        <!-- إعلان سوشيال لمطعم -->
+        <div class="work-card">
+            <!-- Thumbnail: استبدل src بصورة مصغرة مستخرجة من الفيديو -->
+            <img class="thumb" src="https://via.placeholder.com/800x450.png?text=Video" alt="إعلان سوشيال لمطعم">
+            <div class="meta">
+                <h3>إعلان سوشيال لمطعم</h3>
+                <div class="role">Script · Cinematography · Lighting · Editing</div>
+                <a class="watch-btn" href="https://www.facebook.com/share/v/19bNEDXBNo/" target="_blank">Watch</a>
+            </div>
+        </div>
+
+        <!-- محتوى معلوماتي لمنتج -->
+        <div class="work-card">
+            <!-- Thumbnail: استبدل src بصورة مصغرة مستخرجة من الفيديو -->
+            <img class="thumb" src="https://via.placeholder.com/800x450.png?text=Video" alt="محتوى معلوماتي لمنتج">
+            <div class="meta">
+                <h3>محتوى معلوماتي لمنتج</h3>
+                <div class="role">Script · Cinematography · Lighting · Editing</div>
+                <a class="watch-btn" href="https://www.facebook.com/share/v/1BKp9QNKmh/" target="_blank">Watch</a>
+            </div>
+        </div>
+
+        <!-- فيديو تعليمي قصير -->
+        <div class="work-card">
+            <!-- Thumbnail: استبدل src بصورة مصغرة مستخرجة من الفيديو -->
+            <img class="thumb" src="https://via.placeholder.com/800x450.png?text=Video" alt="فيديو تعليمي قصير">
+            <div class="meta">
+                <h3>فيديو تعليمي قصير</h3>
+                <div class="role">Script · Cinematography · Lighting · Editing</div>
+                <a class="watch-btn" href="https://www.facebook.com/share/v/1Bos9NPNBY/" target="_blank">Watch</a>
+            </div>
+        </div>
+
+        <!-- برومو محلي لعلامة تجارية -->
+        <div class="work-card">
+            <!-- Thumbnail: استبدل src بصورة مصغرة مستخرجة من الفيديو -->
+            <img class="thumb" src="https://via.placeholder.com/800x450.png?text=Video" alt="برومو محلي لعلامة تجارية">
+            <div class="meta">
+                <h3>برومو محلي لعلامة تجارية</h3>
+                <div class="role">Script · Cinematography · Lighting · Editing</div>
+                <a class="watch-btn" href="https://www.facebook.com/share/v/1BVraiM8sK/" target="_blank">Watch</a>
+            </div>
+        </div>
+
+        <!-- محتوى سوشيال قصير -->
+        <div class="work-card">
+            <!-- Thumbnail: استبدل src بصورة مصغرة مستخرجة من الفيديو -->
+            <img class="thumb" src="https://via.placeholder.com/800x450.png?text=Video" alt="محتوى سوشيال قصير">
+            <div class="meta">
+                <h3>محتوى سوشيال قصير</h3>
+                <div class="role">Script · Cinematography · Lighting · Editing</div>
+                <a class="watch-btn" href="https://www.facebook.com/share/v/1BSWeiTi1V/" target="_blank">Watch</a>
+            </div>
+        </div>
+
+        <!-- Reel منتج -->
+        <div class="work-card">
+            <!-- Thumbnail: استبدل src بصورة مصغرة مستخرجة من الفيديو -->
+            <img class="thumb" src="https://via.placeholder.com/800x450.png?text=Video" alt="Reel منتج">
+            <div class="meta">
+                <h3>Reel منتج</h3>
+                <div class="role">Script · Cinematography · Lighting · Editing</div>
+                <a class="watch-btn" href="https://www.facebook.com/share/v/1CDRSjDCRH/" target="_blank">Watch</a>
+            </div>
+        </div>
+
+        <!-- فيديو تثقيفي -->
+        <div class="work-card">
+            <!-- Thumbnail: استبدل src بصورة مصغرة مستخرجة من الفيديو -->
+            <img class="thumb" src="https://via.placeholder.com/800x450.png?text=Video" alt="فيديو تثقيفي">
+            <div class="meta">
+                <h3>فيديو تثقيفي</h3>
+                <div class="role">Script · Cinematography · Lighting · Editing</div>
+                <a class="watch-btn" href="https://www.facebook.com/share/r/17dcujdr2d/" target="_blank">Watch</a>
+            </div>
+        </div>
+
+        <!-- مشروع متنوع -->
+        <div class="work-card">
+            <!-- Thumbnail: استبدل src بصورة مصغرة مستخرجة من الفيديو -->
+            <img class="thumb" src="https://via.placeholder.com/800x450.png?text=Video" alt="مشروع متنوع">
+            <div class="meta">
+                <h3>مشروع متنوع</h3>
+                <div class="role">Script · Cinematography · Lighting · Editing</div>
+                <a class="watch-btn" href="https://www.facebook.com/share/r/17dcujdr2d/" target="_blank">Watch</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © Azazz Films — Abdullah Mahmoud Alqazzaz
+    </footer>
+</body>
+</html>
